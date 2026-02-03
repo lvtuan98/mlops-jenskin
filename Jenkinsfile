@@ -13,7 +13,7 @@ pipeline{
                 script{
                     echo 'Cloning Github repo to Jenkins............'
                     // checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[credentialsId: 'github-token', url: 'https://github.com/data-guru0/MLOPS-COURSE-PROJECT-1.git']])
-                    checkout scmGit(branches: [[name: '*/project_2']], extensions: [], userRemoteConfigs: [[credentialsId: 'github-token', url: 'https://github.com/lvtuan98/MLOps.git']])
+                    checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[credentialsId: 'github-token', url: 'https://github.com/lvtuan98/mlops-jenskin.git']])
                 }
             }
         }
